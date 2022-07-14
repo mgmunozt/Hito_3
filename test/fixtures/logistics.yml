@@ -3,11 +3,11 @@
 one:
   Activity: MyString
   crew: 1
-  birthday: 2022-06-30
+  date: 2022-06-30
   activity_type: 1
 
 two:
   Activity: MyString
   crew: 1
-  birthday: 2022-06-30
+  date: 2022-06-30
   activity_type: 1

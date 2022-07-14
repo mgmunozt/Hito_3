@@ -65,6 +65,6 @@ class ConditionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def condition_params
-      params.require(:condition).permit(:attendence, :durarion, :place, :datetime)
+      params.require(:condition).permit(:attendance, :duration, :place, :datetime)
     end
 end
