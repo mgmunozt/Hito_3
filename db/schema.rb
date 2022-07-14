@@ -38,8 +38,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_30_221338) do
   end
 
   create_table "conditions", force: :cascade do |t|
-    t.integer "attendence"
-    t.integer "durarion"
+    t.integer "attendance"
+    t.integer "duration"
     t.string "place"
     t.date "datetime"
     t.datetime "created_at", null: false
@@ -59,11 +59,11 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_30_221338) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  create_table "vets", force: :cascade do |t|
-    t.string "Name"
+  create_table "logistics", force: :cascade do |t|
+    t.string "Activity"
     t.integer "crew"
-    t.date "birthday"
-    t.integer "dog_type"
+    t.date "date"
+    t.integer "activity_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

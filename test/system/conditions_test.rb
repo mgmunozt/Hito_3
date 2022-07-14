@@ -14,9 +14,9 @@ class ConditionsTest < ApplicationSystemTestCase
     visit conditions_url
     click_on "New condition"
 
-    fill_in "Attendence", with: @condition.attendence
+    fill_in "Attendance", with: @condition.attendance
     fill_in "Datetime", with: @condition.datetime
-    fill_in "Durarion", with: @condition.durarion
+    fill_in "Duration", with: @condition.duration
     fill_in "Place", with: @condition.place
     click_on "Create Condition"
 
@@ -28,9 +28,9 @@ class ConditionsTest < ApplicationSystemTestCase
     visit condition_url(@condition)
     click_on "Edit this condition", match: :first
 
-    fill_in "Attendence", with: @condition.attendence
+    fill_in "Attendance", with: @condition.attendance
     fill_in "Datetime", with: @condition.datetime
-    fill_in "Durarion", with: @condition.durarion
+    fill_in "Duration", with: @condition.duration
     fill_in "Place", with: @condition.place
     click_on "Update Condition"
 

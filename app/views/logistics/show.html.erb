@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @logistic %>
+
+<div>
+  <%= link_to "Edit this logistic", edit_logistic_path(@logistic) %> |
+  <%= link_to "Back to logistics", logistics_path %>
+
+  <%= button_to "Destroy this logistic", @logistic, method: :delete %>
+</div>

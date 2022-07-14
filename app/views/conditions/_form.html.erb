@@ -1,7 +1,7 @@
 <%= form_with(model: condition) do |form| %>
   <% if condition.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(condition.errors.count, "error") %> prohibited this condition from being saved:</h2>
+      <h2><%= pluralize(condition.errors.count, "error") %> Access denied, this condition has not been saved:</h2>
 
       <ul>
         <% condition.errors.each do |error| %>
@@ -12,13 +12,13 @@
   <% end %>
 
   <div>
-    <%= form.label :attendence, style: "display: block" %>
-    <%= form.number_field :attendence %>
+    <%= form.label :attendance, style: "display: block" %>
+    <%= form.number_field :attendance %>
   </div>
 
   <div>
-    <%= form.label :durarion, style: "display: block" %>
-    <%= form.number_field :durarion %>
+    <%= form.label :duration, style: "display: block" %>
+    <%= form.number_field :duration %>
   </div>
 
   <div>

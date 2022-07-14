@@ -17,7 +17,7 @@ class ConditionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create condition" do
     assert_difference("Condition.count") do
-      post conditions_url, params: { condition: { attendence: @condition.attendence, datetime: @condition.datetime, durarion: @condition.durarion, place: @condition.place } }
+      post conditions_url, params: { condition: { attendance: @condition.attendance, datetime: @condition.datetime, duration: @condition.duration, place: @condition.place } }
     end
 
     assert_redirected_to condition_url(Condition.last)
@@ -34,7 +34,7 @@ class ConditionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update condition" do
-    patch condition_url(@condition), params: { condition: { attendence: @condition.attendence, datetime: @condition.datetime, durarion: @condition.durarion, place: @condition.place } }
+    patch condition_url(@condition), params: { condition: { attendance: @condition.attendance, datetime: @condition.datetime, duration: @condition.duration, place: @condition.place } }
     assert_redirected_to condition_url(@condition)
   end
 
